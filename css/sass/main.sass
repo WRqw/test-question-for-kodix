@@ -1,0 +1,61 @@
+@import "bourbon/bourbon"
+
+body
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+	font-family: 'ArialRegular', sans-serif
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+header
+	background-color: #282d30
+	width: 100%	
+	font-family: 'RobotoRegular', sans-serif
+	.logo
+		position: relative
+		top: 8px
+	.head-mnu
+		margin-left: 80px
+		color: #fff
+		ul 
+			li 
+				display: inline-block
+				vertical-align: middle
+				padding: 26px 20px	
+				line-height: 14px
+				text-transform: uppercase
+
+				
+				a 
+					cursor: pointer
+					color: #fff
+					text-decoration: none
+					padding-bottom: 1px
+					&:hover
+						border-bottom: 3px solid #00aeef
+.brands
+	padding-top: 34px
+	span
+		font-size: 15px
+	select
+		display: block	
+		margin-top: 15px
+		width: 200px
+		padding: 3px 0	
+		font-family: 'ArialBold', sans-serif
+		option 
+			font-family: 'ArialRegular', sans-serif
+			&.active
+				font-family: 'ArialBold', sans-serif
