@@ -2,17 +2,55 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	.brands .brand-item .top-clothes-button-wrap, .brands .brand-item .bottom-clothes-button-wrap {
+			position: absolute;
+			float: left;
+			bottom: 340px;
+			right: 20%;	
 
+		}
+			
+.brands .brand-item .bottom-clothes-button-wrap {
+	bottom: 180px;
+	right: 32%;	
+}
+.cat-img {
+	height: 100%;
+}
+			
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.brands .brand-item .burton-title {
+		font-size: 32px;
+		bottom: 110px;
 
+	}
+	.brands .brand-item .bottom-clothes-button-wrap {
+	    bottom: 258px;
+    	right: 24%;
+	}
+	.brands .brand-item .top-clothes-button-wrap {
+		bottom: 379px;
+		right: 18%;
+	}
+	.brands .brand-item .top-clothes-button-wrap .clothes-descr span,
+	.brands .brand-item .bottom-clothes-button-wrap .clothes-descr span {
+		font-size: 16px;
+	}
+	.cat-img {
+		height: 100%;
+	}
+			
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+	.brands .brand-item .burton-title {
+		font-size: 31px;
+		
+	}
 }
 
 /* Extra Small Devices, Phones */

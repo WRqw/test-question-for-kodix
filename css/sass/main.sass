@@ -1,5 +1,10 @@
 @import "bourbon/bourbon"
 
+$white-cirlce: #000
+$grey-circle: #cbcbcc
+$red-circle: #d74345
+$green-circle: #88c504
+
 body
 	font-weight: normal
 	font-size: 14px
@@ -55,7 +60,180 @@ header
 		width: 200px
 		padding: 3px 0	
 		font-family: 'ArialBold', sans-serif
-		option 
+		margin-bottom: 50px
+	.brand-item
+		background-color: #000
+		min-height: 560px
+		position: relative
+		.cat-img
+			opacity: .25
+			background-size: cover
+			overflow: hidden
+			max-width: 100%
+		.top-clothes-button-wrap,
+		.bottom-clothes-button-wrap
+			position: absolute
+			float: left
+			bottom: 300px
+			right: 24%	
+			span
+				display: block		
+			.clothes-button
+				width: 43px 
+				height: 43px
+				border-radius: 50%
+				background-color: #fff
+				float: left
+				cursor: pointer
+				margin-right: 30px
+				.close 
+					position: absolute
+					width: 43px
+					height: 43px
+					border-radius: 50%
+					top: 8px 
+					left: 6px
+				
+					.horizontal-line,
+					.vertical-line 
+						position: absolute
+						left: 15px
+						content: ' '
+						height: 26px
+						width: 2px
+						background-color: #00aeef
+					
+				
+					.horizontal-line 
+						transform: rotate(90deg)
+				&:hover .horizontal-line,
+				&:hover .vertical-line
+					background-color: #e3343d
+			.clothes-descr
+				float: right	
+				span 
+					font-size: 20px
+					color: #fff
+					vertical-align: 30px
+				a 
+					vertical-align: 30px
+					margin-top: 10px	
+					display: block
+		.bottom-clothes-button-wrap
+			bottom: 140px
+			right: 36%	
+		.burton-title
+			float: right
+			position: absolute
+			bottom: 1px	
+			right: 250px
+			font-size: 42px
+			color: #fff
 			font-family: 'ArialRegular', sans-serif
-			&.active
-				font-family: 'ArialBold', sans-serif
+			font-weight: normal
+.table 
+	margin-top: 50px
+	.auto-title
+		margin-left: 15px
+		font-family: 'RobotoBold', sans-serif
+		font-size: 20px
+		text-transform: uppercase
+		margin-top: 0
+		position: relative
+			&:before
+				content: ''
+				position: absolute
+				width: 3px
+				height: 18px
+				background-color: #8b9497
+
+	table
+		width: 100%
+		tr 
+			border-spacing: 0
+			border-radius: 10px
+			border-bottom: 1px solid #e6e9ea
+			background-color: #f5f6f6
+			&:first-child
+				border-bottom: none
+		th 
+			padding: 10px 20px 10px 20px
+			background-color: #d7dcde
+			text-align: left
+			font-family: 'Roboto', sans-serif
+			font-weight: normal
+			font-size: 15px
+			&:first-child
+				border-top-left-radius: 5px
+				padding-left: 15px
+				max-width: 450px
+			&:last-child 
+				border-top-right-radius: 5px
+			&:nth-child(5)
+				.auto-price
+					border-bottom: 1px dashed #64686b
+					position: relative
+					cursor: pointer
+					&::after
+						content: ''
+						position: absolute
+						width: 10px
+						height: 10px
+						background-image: url("../img/price-triangle.png") 
+						background-repeat: no-repeat
+						bottom: 0
+						right: -15px
+		td 
+			white-space: nowrap
+			&:first-child
+				padding-left: 15px
+				color: #323232
+			padding: 10px 20px 10px 20px
+			font-family: 'RobotoLight', sans-serif
+			font-size: 15px
+			&:nth-child(2)
+				color: #282d30
+			&:nth-child(5)
+				white-space: nowrap
+			&:nth-child(6)	
+				padding: 5px 0 5px 0
+				color: #8b9497
+				font-size: 14px
+				background-color: transparent
+				border-radius: 10px
+				cursor: pointer
+				.table-inquiry
+					padding: 5px 20px 5px 20px
+					background-color: transparent
+					border-radius: 20px
+					&:hover
+						background-color: #282d30
+						color: #fff
+
+
+
+			.more-descr
+				font-size: 13px
+				color: #8b9497
+				display: block
+			.table-circle
+				width: 20px
+				height: 20px
+				background-color: #000
+				border-radius: 50%
+				margin-left: 8px
+				border: 1px solid #dfdfdf
+			.white-circle
+				background-color: #fff
+			.grey-circle
+				background-color: #cbcbcc
+			.red-circle 
+				background-color: #d74345
+			.green-circle
+				background-color: #88c504
+
+
+
+    			
+				
+	

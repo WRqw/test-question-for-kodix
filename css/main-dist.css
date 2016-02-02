@@ -1,73 +1,61 @@
-body {
-  font-weight: normal;
-  font-size: 14px;
-  min-width: 320px;
-  position: relative;
-  line-height: 1.42857;
-  -webkit-font-smoothing: antialised;
-  font-family: "ArialRegular", sans-serif;
-}
+/*
+Error: Illegal nesting: Only properties may be nested beneath properties.
+        on line 143 of main.sass
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: red;
-}
+138: 		font-family: 'RobotoBold', sans-serif
+139: 		font-size: 20px
+140: 		text-transform: uppercase
+141: 		margin-top: 0
+142: 		position: relative
+143: 			&:before
+144: 				content: ''
+145: 				position: absolute
+146: 				width: 3px
+147: 				height: 18px
+148: 				background-color: #8b9497
 
-body input:required:valid,
-body textarea:required:valid {
-  color: green;
-}
-
-.hidden {
-  display: none;
-}
-
-header {
-  background-color: #282d30;
-  width: 100%;
-  font-family: "RobotoRegular", sans-serif;
-}
-header .logo {
-  position: relative;
-  top: 8px;
-}
-header .head-mnu {
-  margin-left: 80px;
-  color: #fff;
-}
-header .head-mnu ul li {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 26px 20px;
-  line-height: 14px;
-  text-transform: uppercase;
-}
-header .head-mnu ul li a {
-  cursor: pointer;
-  color: #fff;
-  text-decoration: none;
-  padding-bottom: 1px;
-}
-header .head-mnu ul li a:hover {
-  border-bottom: 3px solid #00aeef;
-}
-
-.brands {
-  padding-top: 34px;
-}
-.brands span {
-  font-size: 15px;
-}
-.brands select {
-  display: block;
-  margin-top: 15px;
-  width: 200px;
-  padding: 3px 0;
-  font-family: "ArialBold", sans-serif;
-}
-.brands select option {
-  font-family: "ArialRegular", sans-serif;
-}
-.brands select option.active {
-  font-family: "ArialBold", sans-serif;
-}
+Backtrace:
+main.sass:143
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:13:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:38:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:38:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:38:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:57:in `visit_root'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:24:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/root_node.rb:35:in `css_tree'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/root_node.rb:20:in `render'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/engine.rb:278:in `render'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:420:in `run'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `load'
+C:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Illegal nesting: Only properties may be nested beneath properties.\A         on line 143 of main.sass\A \A 138: 		font-family: 'RobotoBold', sans-serif\A 139: 		font-size: 20px\A 140: 		text-transform: uppercase\A 141: 		margin-top: 0\A 142: 		position: relative\A 143: 			&:before\A 144: 				content: ''\A 145: 				position: absolute\A 146: 				width: 3px\A 147: 				height: 18px\A 148: 				background-color: #8b9497"; }
