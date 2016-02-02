@@ -1,15 +1,8 @@
 $(document).ready(function() {
 
-	 $(function() {
-    $( "#speed" ).selectmenu();
- 
-    $( "#files" ).selectmenu();
- 
-    $( "#number" )
-      .selectmenu()
-      .selectmenu( "menuWidget" )
-        .addClass( "overflow" );
-  });
+	$(".head-mnu li").click(function() {
+		 $('.hide-mnu').slideToggle("slow");
+	});
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {

@@ -34,7 +34,9 @@ header
 	.head-mnu
 		margin-left: 80px
 		color: #fff
+		position: relative
 		ul 
+			margin-bottom: 0
 			li 
 				display: inline-block
 				vertical-align: middle
@@ -50,6 +52,31 @@ header
 					padding-bottom: 1px
 					&:hover
 						border-bottom: 3px solid #00aeef
+		.hide-mnu 
+			background-color: #282d30
+			width: 240px
+			margin-top: 0
+			position: absolute
+			padding-left: 0
+			left: 30px
+			z-index: 2
+			display: none
+			li 
+				display: block
+				font-family: 'Roboto', sans-serif
+				font-size: 14px
+				font-weight: normal
+				padding: 10px 10px
+				text-transform: none
+				border-bottom: 1px solid #383d40
+				width: 100%	
+				&:last-child
+					border-bottom: none
+				&:hover 
+					background-color: #00aeef
+				a 
+					padding-left: 20px
+
 .brands
 	padding-top: 34px
 	span
@@ -243,7 +270,8 @@ footer
 		margin: auto
 		text-align: center
 		padding: 40px
-		color: #fff			
+		color: #fff		
+
 
 
 
