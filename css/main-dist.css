@@ -165,6 +165,7 @@ header .head-mnu .hide-mnu li a {
 .brands .brand-item .top-clothes-button-wrap .clothes-descr,
 .brands .brand-item .bottom-clothes-button-wrap .clothes-descr {
   float: right;
+  display: none;
 }
 .brands .brand-item .top-clothes-button-wrap .clothes-descr span,
 .brands .brand-item .bottom-clothes-button-wrap .clothes-descr span {

@@ -55,11 +55,80 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.logo-block img {
+		display: none;
+	}
+	.logo-block {
+		background-image: url('../img/m-header-logo.png');
+		background-repeat: no-repeat;
+		height: 60px;
+		position: relative;
+	}
+	.toggle-menu {
+		left: 332px;
+		bottom: 10px;
+		position: absolute;
+	}
+	.button {
+		background-image: url('../img/button.png');
+		background-repeat: no-repeat;
+		width: 30px;
+		height: 30px;
+	}
 
+	header .head-mnu {
+		width: 100%;
+		margin-left: 0;
+		display: none;
+	}
+	header .head-mnu ul li {
+		display: block;
+		border-bottom: 1px solid #414548
+	}
+	.head-mnu ul {
+		padding-left: 0;
+	}
+	.brand-item {
+		display: none;
+	}
+	.table table td{
+		padding: 2px;
+		font-size: 12px;
+	}
+	.table table td:nth-child(6) .table-inquiry {
+		padding: 2px
+	}
+	.table .container, .col-md-12 {
+		padding: 0
+	}
+	.table .row {
+		margin: 0;
+	}
+	.brands select {
+		margin-bottom: 0;	
+	}
+	header .head-mnu ul li:hover {
+		background-color: #00aeef;
+		cursor: pointer;
+	}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+
+	.logo-block {
+		background-image: url('../img/m-header-logo.png');
+		background-repeat: no-repeat;
+		height: 60px;
+		position: relative;
+		background-size: 80%;
+
+	}
+	.toggle-menu {
+   		left: 282px;
+    	bottom: 10px;
+   		position: absolute;
+}
 
 }
 

@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css" />
 	<link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="libs/owl/assets/owl.carousel.css" />
 
 </head>
 <body>
@@ -23,7 +24,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<img src="img/header-logo.png" alt="" class="logo">
+					<div class="logo-block">
+						<img src="img/header-logo.png" alt="" class="logo">
+					</div>
+					<a href="#" class="toggle-menu hidden-lg">
+						<div class="button">
+							
+						</div>
+					</a>
 				</div>
 				<div class="col-md-6">
 					<div class="head-mnu">
@@ -52,25 +60,20 @@
 				<form action="#">
 					<span>Выберите бренд</span>
 					<select name="number" id="number">
-			        	<option>1</option>
-			      		<option selected="selected">2</option>
-			      		<option>3</option>
-					    <option>4</option>
-					    <option>5</option>
-					    <option>6</option>
-					    <option>7</option>
-					    <option>8</option>
-					    <option>9</option>
-					    <option>10</option>
-					    <option>11</option>
-					    <option>12</option>
-			            <option>13</option>
-			     	    <option>14</option>
-					    <option>15</option>
-					    <option>16</option>
-					    <option>17</option>
-					    <option>18</option>
-					    <option>19</option>
+			        	<option>Apo</option>
+			      		<option selected="selected">arbor</option>
+			      		<option>burton</option>
+					    <option>capita</option>
+					    <option>dc</option>
+					    <option>forum</option>
+					    <option>gnu</option>
+					    <option>joint</option>
+					    <option>jones</option>
+					    <option>lib</option>
+					    <option>lobster</option>
+					    <option>never summer</option>
+			            <option>slash</option>
+			     	    <option>yes</option>
    					</select>
    				</form>	
 				</div>		
@@ -81,7 +84,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12">
+				<div class="carousel">
+
 					<div class="brand-item">
+
 						<img src="img/cat-item.jpg" alt="" class="cat-img">
 
 						<div class="top-clothes-button-wrap">
@@ -118,6 +124,7 @@
 							</div>
 						</div>
 							<h1 class="burton-title">BURTON ЗИМА 2014</h1>
+					</div>		
 					</div>
 				</div>
 			</div>
@@ -130,11 +137,11 @@
 	<section class="table">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 col-md-offset-1">
+			<div class="col-md-11 col-xs-12 col-md-offset-1">
 				<h3 class="auto-title">Автомобили в наличии</h3>
 				<div class="table-responsive">
 				<table class="table">
-					<tr>
+					<tr class="hidden-xs">
 						<th>Название</th>
 						<th>Год</th>
 						<th>Цвет</th>
@@ -196,6 +203,7 @@
 					</tr>
 		</table>
 		</div>
+		</div>
 			</div>
 		</div>
 	</div>
@@ -214,7 +222,7 @@
 
 	</footer>
 	
-	<div class="hidden"></div>
+	
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -222,7 +230,7 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-	
+
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/modernizr/modernizr.js"></script>
 	

@@ -153,7 +153,9 @@ header .head-mnu .hide-mnu li a {
 }
 .brands .brand-item .top-clothes-button-wrap .clothes-button .close .horizontal-line,
 .brands .brand-item .bottom-clothes-button-wrap .clothes-button .close .horizontal-line {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .brands .brand-item .top-clothes-button-wrap .clothes-button:hover .horizontal-line, .brands .brand-item .top-clothes-button-wrap .clothes-button:hover .vertical-line,
 .brands .brand-item .bottom-clothes-button-wrap .clothes-button:hover .horizontal-line,
@@ -163,6 +165,7 @@ header .head-mnu .hide-mnu li a {
 .brands .brand-item .top-clothes-button-wrap .clothes-descr,
 .brands .brand-item .bottom-clothes-button-wrap .clothes-descr {
   float: right;
+  display: none;
 }
 .brands .brand-item .top-clothes-button-wrap .clothes-descr span,
 .brands .brand-item .bottom-clothes-button-wrap .clothes-descr span {

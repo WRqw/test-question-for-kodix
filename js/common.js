@@ -4,6 +4,16 @@ $(document).ready(function() {
 		 $('.hide-mnu').slideToggle("slow");
 	});
 
+
+	$(".toggle-menu").click(function() {
+		 $('.head-mnu').slideToggle("slow");
+	});
+
+	$(".clothes-button").click(function() {
+		 $('.clothes-descr').slideToggle("fast");
+	});
+
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");
