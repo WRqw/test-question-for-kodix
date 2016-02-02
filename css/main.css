@@ -1,61 +1,286 @@
-/*
-Error: Illegal nesting: Only properties may be nested beneath properties.
-        on line 143 of main.sass
+body {
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.42857;
+  -webkit-font-smoothing: antialised;
+  font-family: "ArialRegular", sans-serif;
+}
 
-138: 		font-family: 'RobotoBold', sans-serif
-139: 		font-size: 20px
-140: 		text-transform: uppercase
-141: 		margin-top: 0
-142: 		position: relative
-143: 			&:before
-144: 				content: ''
-145: 				position: absolute
-146: 				width: 3px
-147: 				height: 18px
-148: 				background-color: #8b9497
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red;
+}
 
-Backtrace:
-main.sass:143
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:13:in `visit'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:38:in `visit'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:38:in `visit'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:38:in `visit'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:57:in `visit_root'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:24:in `visit'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/root_node.rb:35:in `css_tree'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/root_node.rb:20:in `render'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/engine.rb:278:in `render'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:420:in `run'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `load'
-C:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Illegal nesting: Only properties may be nested beneath properties.\A         on line 143 of main.sass\A \A 138: 		font-family: 'RobotoBold', sans-serif\A 139: 		font-size: 20px\A 140: 		text-transform: uppercase\A 141: 		margin-top: 0\A 142: 		position: relative\A 143: 			&:before\A 144: 				content: ''\A 145: 				position: absolute\A 146: 				width: 3px\A 147: 				height: 18px\A 148: 				background-color: #8b9497"; }
+body input:required:valid,
+body textarea:required:valid {
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  background-color: #282d30;
+  width: 100%;
+  font-family: "RobotoRegular", sans-serif;
+}
+header .logo {
+  position: relative;
+  top: 8px;
+}
+header .head-mnu {
+  margin-left: 80px;
+  color: #fff;
+}
+header .head-mnu ul li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 26px 20px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+header .head-mnu ul li a {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 1px;
+}
+header .head-mnu ul li a:hover {
+  border-bottom: 3px solid #00aeef;
+}
+
+.brands {
+  padding-top: 34px;
+}
+.brands span {
+  font-size: 15px;
+}
+.brands select {
+  display: block;
+  margin-top: 15px;
+  width: 200px;
+  padding: 3px 0;
+  font-family: "ArialBold", sans-serif;
+  margin-bottom: 50px;
+}
+.brands .brand-item {
+  background-color: #000;
+  min-height: 560px;
+  position: relative;
+}
+.brands .brand-item .cat-img {
+  opacity: 0.25;
+  background-size: cover;
+  overflow: hidden;
+  max-width: 100%;
+}
+.brands .brand-item .top-clothes-button-wrap,
+.brands .brand-item .bottom-clothes-button-wrap {
+  position: absolute;
+  float: left;
+  bottom: 300px;
+  right: 24%;
+}
+.brands .brand-item .top-clothes-button-wrap span,
+.brands .brand-item .bottom-clothes-button-wrap span {
+  display: block;
+}
+.brands .brand-item .top-clothes-button-wrap .clothes-button,
+.brands .brand-item .bottom-clothes-button-wrap .clothes-button {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: #fff;
+  float: left;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.brands .brand-item .top-clothes-button-wrap .clothes-button .close,
+.brands .brand-item .bottom-clothes-button-wrap .clothes-button .close {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  top: 8px;
+  left: 6px;
+}
+.brands .brand-item .top-clothes-button-wrap .clothes-button .close .horizontal-line,
+.brands .brand-item .top-clothes-button-wrap .clothes-button .close .vertical-line,
+.brands .brand-item .bottom-clothes-button-wrap .clothes-button .close .horizontal-line,
+.brands .brand-item .bottom-clothes-button-wrap .clothes-button .close .vertical-line {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 26px;
+  width: 2px;
+  background-color: #00aeef;
+}
+.brands .brand-item .top-clothes-button-wrap .clothes-button .close .horizontal-line,
+.brands .brand-item .bottom-clothes-button-wrap .clothes-button .close .horizontal-line {
+  transform: rotate(90deg);
+}
+.brands .brand-item .top-clothes-button-wrap .clothes-button:hover .horizontal-line, .brands .brand-item .top-clothes-button-wrap .clothes-button:hover .vertical-line,
+.brands .brand-item .bottom-clothes-button-wrap .clothes-button:hover .horizontal-line,
+.brands .brand-item .bottom-clothes-button-wrap .clothes-button:hover .vertical-line {
+  background-color: #e3343d;
+}
+.brands .brand-item .top-clothes-button-wrap .clothes-descr,
+.brands .brand-item .bottom-clothes-button-wrap .clothes-descr {
+  float: right;
+}
+.brands .brand-item .top-clothes-button-wrap .clothes-descr span,
+.brands .brand-item .bottom-clothes-button-wrap .clothes-descr span {
+  font-size: 20px;
+  color: #fff;
+  vertical-align: 30px;
+}
+.brands .brand-item .top-clothes-button-wrap .clothes-descr a,
+.brands .brand-item .bottom-clothes-button-wrap .clothes-descr a {
+  vertical-align: 30px;
+  margin-top: 10px;
+  display: block;
+}
+.brands .brand-item .bottom-clothes-button-wrap {
+  bottom: 140px;
+  right: 36%;
+}
+.brands .brand-item .burton-title {
+  float: right;
+  position: absolute;
+  bottom: 1px;
+  right: 250px;
+  font-size: 42px;
+  color: #fff;
+  font-family: "ArialRegular", sans-serif;
+  font-weight: normal;
+}
+
+.table {
+  padding-bottom: 65px;
+  margin-top: 50px;
+}
+.table .auto-title {
+  margin-left: 15px;
+  font-family: "RobotoBold", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 0;
+  position: relative;
+}
+.table .auto-title:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 18px;
+  background-color: #8b9497;
+  bottom: 4px;
+  left: -12px;
+}
+.table table tr {
+  border-spacing: 0;
+  border-radius: 10px;
+  border-bottom: 1px solid #e6e9ea;
+  background-color: #f5f6f6;
+}
+.table table tr:first-child {
+  border-bottom: none;
+}
+.table table th {
+  padding: 10px 20px 10px 20px;
+  background-color: #d7dcde;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+}
+.table table th:first-child {
+  border-top-left-radius: 5px;
+  padding-left: 15px;
+}
+.table table th:last-child {
+  border-top-right-radius: 5px;
+}
+.table table th:nth-child(5) .auto-price {
+  border-bottom: 1px dashed #64686b;
+  position: relative;
+  cursor: pointer;
+}
+.table table th:nth-child(5) .auto-price::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/price-triangle.png");
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: -15px;
+}
+.table table td {
+  padding: 10px 20px 10px 20px;
+  font-family: "RobotoLight", sans-serif;
+  font-size: 15px;
+}
+.table table td:first-child {
+  padding-left: 15px;
+  color: #323232;
+}
+.table table td:nth-child(2) {
+  color: #282d30;
+}
+.table table td:nth-child(6) {
+  padding: 5px 0 5px 0;
+  color: #8b9497;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.table table td:nth-child(6) .table-inquiry {
+  padding: 5px 20px 5px 20px;
+  background-color: transparent;
+  border-radius: 20px;
+}
+.table table td:nth-child(6) .table-inquiry:hover {
+  background-color: #282d30;
+  color: #fff;
+}
+.table table td .more-descr {
+  font-size: 13px;
+  color: #8b9497;
+  display: block;
+}
+.table table td .table-circle {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-left: 8px;
+  border: 1px solid #dfdfdf;
+}
+.table table td .white-circle {
+  background-color: #fff;
+}
+.table table td .grey-circle {
+  background-color: #cbcbcc;
+}
+.table table td .red-circle {
+  background-color: #d74345;
+}
+.table table td .green-circle {
+  background-color: #88c504;
+}
+
+footer {
+  background-color: #282d30;
+}
+footer .copyright-wrap {
+  font-family: "RobotoLight", sans-serif;
+  font-size: 11px;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+}
