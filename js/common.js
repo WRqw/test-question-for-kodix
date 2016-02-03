@@ -31,6 +31,9 @@ $(document).ready(function() {
 
 
 
+
+
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");
