@@ -104,6 +104,9 @@
 	.table .row {
 		margin: 0;
 	}
+	.table .col-xs-12 {
+		padding: 0;
+	}
 	.brands select {
 		margin-bottom: 0;	
 	}

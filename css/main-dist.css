@@ -46,14 +46,23 @@ header .head-mnu ul li {
   line-height: 14px;
   text-transform: uppercase;
 }
+header .head-mnu ul li:hover {
+  background-image: url("../img/menu-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 124px 30px;
+}
+header .head-mnu ul li:hover a {
+  border-bottom: 3px solid #00aeef;
+  background-image: url("../img/menu-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 124px 30px;
+}
 header .head-mnu ul li a {
   cursor: pointer;
   color: #fff;
   text-decoration: none;
   padding-bottom: 1px;
-}
-header .head-mnu ul li a:hover {
-  border-bottom: 3px solid #00aeef;
+  position: relative;
 }
 header .head-mnu .hide-mnu {
   background-color: #282d30;
@@ -80,6 +89,7 @@ header .head-mnu .hide-mnu li:last-child {
 }
 header .head-mnu .hide-mnu li:hover {
   background-color: #00aeef;
+  background-image: none;
 }
 header .head-mnu .hide-mnu li a {
   padding-left: 20px;
@@ -94,14 +104,19 @@ header .head-mnu .hide-mnu li a {
 .brands select {
   display: block;
   margin-top: 15px;
-  width: 200px;
-  padding: 3px 0;
-  font-family: "ArialBold", sans-serif;
+  padding: 5px 120px 5px 5px;
+  font-family: "ArialRegular", sans-serif;
   margin-bottom: 50px;
+  background-color: transparent;
+  color: #999999;
+  text-transform: uppercase;
+}
+.brands select option:hover {
+  color: #000;
 }
 .brands .brand-item {
   background-color: #000;
-  min-height: 560px;
+  height: 560px;
   position: relative;
 }
 .brands .brand-item .cat-img {
@@ -319,4 +334,33 @@ footer .copyright-wrap {
   text-align: center;
   padding: 40px;
   color: #fff;
+}
+
+.owl-nav div {
+  width: 16px;
+  height: 40px;
+  background-image: url("../img/slider-arrows.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 46%;
+}
+.owl-nav div.owl-prev {
+  left: 40px;
+}
+.owl-nav div.owl-next {
+  right: 40px;
+  background-position: top right;
+}
+
+.review {
+  position: absolute;
+  top: 38%;
+  padding: 20px;
+  width: 50%;
+  left: 25%;
+  right: 25%;
+  color: #fff;
+  font-family: "RobotoRegular";
+  font-size: 18px;
+  font-weight: normal;
 }

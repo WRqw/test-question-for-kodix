@@ -9,9 +9,26 @@ $(document).ready(function() {
 		 $('.head-mnu').slideToggle("slow");
 	});
 
-	$(".clothes-button").click(function() {
-		 $('.clothes-descr').slideToggle("fast");
+	$(".top-clothes-button-wrap .clothes-button").click(function() {
+		 $('.top-clothes-button-wrap .clothes-descr').slideToggle("fast");
 	});
+
+	$(".bottom-clothes-button-wrap .clothes-button").click(function() {
+		 $('.bottom-clothes-button-wrap .clothes-descr').slideToggle("fast");
+	});
+
+	 $(".carousel").owlCarousel({
+	 	responsive : {
+	 		0 : {
+	 			items : 1,
+	 			nav : true
+	 		}
+	 	},
+	 	navText : ''
+
+	 });
+
+
 
 
 	//Цели для Яндекс.Метрики и Google Analytics
